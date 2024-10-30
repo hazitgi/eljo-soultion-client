@@ -77,13 +77,12 @@ export default function UpdateOrder({ order, setOrders }) {
   useEffect(() => {
     if (order) {
       setValue("sign_type", order?.sign_type);
-      setValue("quantity", order?.quantity.toString());
-      setValue("projectId", order?.projectId.toString());
+      setValue("quantity", String(order?.quantity));
+      setValue("projectId", String(order?.projectId));
       setValue("mode", order?.mode);
     }
   }, [order]);
 
-  
   return (
     <>
       <button

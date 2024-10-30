@@ -1,4 +1,4 @@
-import { Pencil, Trash2, Ban } from "lucide-react";
+import { Trash2 } from "lucide-react";
 import "./order.css";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -65,11 +65,13 @@ export default function Orders() {
       setOrders([
         ...orders,
         {
+          id: createWorkOrder?.id,
           work_order_number: createWorkOrder.work_order_number,
           project: { project_number: createWorkOrder.project?.project_number },
           sign_type: createWorkOrder?.sign_type,
           quantity: createWorkOrder?.quantity,
           mode: createWorkOrder?.mode,
+          created_at: createWorkOrder?.created_at,
         },
       ]);
       toast.success("Order added successfully!");

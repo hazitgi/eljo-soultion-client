@@ -19,7 +19,7 @@ export const CREATE_ORDER = gql`
 `;
 
 export const FETCH_ORDERS = gql`
-  query Query {
+  query WorkOrders {
     workOrders {
       id
       work_order_number
@@ -27,10 +27,39 @@ export const FETCH_ORDERS = gql`
       sign_type
       quantity
       mode
+      status
+      assignee {
+        id
+        name
+        email
+        resetToken
+        resetTokenExpiry
+        role
+        created_at
+        updated_at
+      }
       created_at
       updated_at
       project {
+        id
         project_number
+        project_name
+        location
+        client_name
+        country
+        status
+        created_at
+        updated_at
+      }
+      qcChecklist {
+        id
+
+        category
+        parameter
+        status
+        comments
+        created_at
+        updated_at
       }
     }
   }
@@ -65,6 +94,100 @@ export const DELETE_WORK_ORDER = gql`
     removeWorkOrder(id: $removeWorkOrderId) {
       message
       id
+    }
+  }
+`;
+
+export const GET_WORK_ORDERS = gql`
+  query WorkOrder($workOrderId: Int!) {
+    workOrder(id: $workOrderId) {
+      id
+      work_order_number
+      projectId
+      sign_type
+      quantity
+      mode
+      status
+      assignee {
+        id
+        name
+        email
+        resetToken
+        resetTokenExpiry
+        role
+        created_at
+        updated_at
+      }
+      created_at
+      updated_at
+      project {
+        id
+        project_number
+        project_name
+        location
+        client_name
+        country
+        status
+        created_at
+        updated_at
+      }
+      qcChecklist {
+        id
+
+        category
+        parameter
+        status
+        comments
+        created_at
+        updated_at
+      }
+    }
+  }
+`;
+
+export const ASSIGN_WORK_ORDER = gql`
+  mutation AssignWorkOrder($assignWorkOrderInput: AssignWorkOrderInput!) {
+    assignWorkOrder(assignWorkOrderInput: $assignWorkOrderInput) {
+      id
+      work_order_number
+      projectId
+      sign_type
+      quantity
+      mode
+      status
+      assignee {
+        id
+        name
+        email
+        resetToken
+        resetTokenExpiry
+        role
+        created_at
+        updated_at
+      }
+      created_at
+      updated_at
+      project {
+        id
+        project_number
+        project_name
+        location
+        client_name
+        country
+        status
+        created_at
+        updated_at
+      }
+      qcChecklist {
+        id
+
+        category
+        parameter
+        status
+        comments
+        created_at
+        updated_at
+      }
     }
   }
 `;
