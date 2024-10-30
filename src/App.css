@@ -1,0 +1,585 @@
+.page_container,
+.header_container {
+  margin-left: 220px;
+  transition: all 0.5s;
+}
+
+.page_container {
+  background: var(--bs-highlight-bg);
+  padding: 100px 10px 20px 10px;
+  overflow-x: hidden;
+}
+
+.page_title {
+  color: var(--bs-page);
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px var(--bs-btn-blue); */
+  /* border-radius: 10px; */
+  background-color: var(--bs-num-bg);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: var(--bs-btn-opp-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  /* border-radius: 10px; */
+  -webkit-box-shadow: inset 0 0 6px var(--bs-btn-blue);
+  background-color: var(--bs-btn-blue);
+}
+
+@media only screen and (max-width: 1024px) {
+  .main_sidemenu {
+    display: none;
+  }
+
+  .sidebar_open .main_sidemenu {
+    width: 220px !important;
+    display: block !important;
+    z-index: 9;
+    height: 100vh;
+    position: fixed;
+    z-index: 99;
+  }
+
+  .sidebar_open .main_menu_name {
+    display: block !important;
+  }
+
+  .sidebar_open .page_container,
+  .sidebar_open .header_container {
+    margin-left: 0px !important;
+  }
+
+  /* .sidebar_open .sidemenu_logo img {
+        padding: 20px 20px 10px 20px;
+        width: 27% !important;
+        object-fit: initial;
+        height: auto;
+        object-position: initial;
+        height: 60px;
+    } */
+
+  .sidebar_open .sidemenu_logo img.sidebarcloselogo {
+    display: none !important;
+  }
+
+  .sidebar_open .sidemenu_logo img.sidebaropenlogo {
+    display: block !important;
+    width: 65% !important;
+    margin-left: 15px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .sidebar_open .sidemenu_logo {
+    text-align: left !important;
+  }
+
+  .sidebar_open .close_sidemenu {
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 12px;
+    font-size: 24px;
+    z-index: 9999;
+    cursor: pointer;
+  }
+
+  .header_container {
+    margin-left: 0px;
+    padding-left: 15px;
+    padding-right: 18px !important;
+    width: 100% !important;
+  }
+
+  .user_name {
+    font-size: 12px;
+  }
+
+  .name_filters input {
+    font-size: 12px;
+  }
+
+  .users_img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .page_container {
+    margin-left: 0px;
+    width: 100% !important;
+  }
+
+  .sidebar_open
+    .main_sidemenu
+    .list_main_menu
+    .main_main_ul_list
+    .big_left_menu
+    .accordion
+    .accordion-item
+    .accordion-header
+    .accordion-button {
+    justify-content: flex-start !important;
+  }
+
+  .sidebar_open
+    .main_sidemenu
+    .list_main_menu
+    .main_main_ul_list
+    .big_left_menu
+    .accordion
+    .accordion-item
+    .accordion-header
+    .accordion-button
+    .inner_page_list
+    .main_menu_icon {
+    margin-right: 15px !important;
+  }
+
+  .sidebar_open
+    .main_sidemenu
+    .list_main_menu
+    .main_main_ul_list
+    li
+    .page_list
+    .inner_page_list {
+    justify-content: flex-start !important;
+  }
+
+  .sidebar_open
+    .main_sidemenu
+    .list_main_menu
+    .main_main_ul_list
+    li
+    .page_list
+    .inner_page_list
+    .main_menu_icon {
+    margin-right: 15px !important;
+  }
+
+  .sidebar_open
+    .main_sidemenu
+    .list_main_menu
+    .main_main_ul_list
+    .big_left_menu
+    .accordion
+    .accordion-item
+    .accordion-collapse
+    .accordion-body {
+    padding-left: 1.25rem !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header_container {
+    padding-right: 5px !important;
+  }
+}
+
+/** Remove this CSS after implemented Mattable **/
+
+.custom_datatable thead tr th {
+  background-color: var(--bs-qc-bg);
+  color: var(--bs-text);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 12px;
+  text-align: left;
+}
+
+.custom_datatable thead tr th:hover {
+  outline: none !important;
+}
+
+.custom_datatable tbody tr td,
+.custom_datatable tbody tr {
+  background-color: var(--bs-white) !important;
+}
+
+.custom_datatable tbody tr td {
+  font-size: 14px;
+  color: var(--bs-text);
+  vertical-align: middle;
+  padding: 12px 12px;
+  text-align: left;
+}
+
+.main_datatable .dt-paging.paging_simple {
+  margin-top: 10px;
+}
+
+.main_datatable .dt-paging.paging_simple ul li .page-link {
+  height: 30px;
+  width: 40px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.main_datatable .page-item .page-link {
+  box-shadow: unset !important;
+  color: var(--bs-black);
+  border: none !important;
+  background-color: transparent !important;
+  font-size: 14px;
+}
+
+.main_datatable .page-item.active .page-link {
+  background-color: var(--bs-btn-blue) !important;
+  box-shadow: unset !important;
+  color: var(--bs-white);
+  border-color: transparent !important;
+  border-radius: 4px;
+}
+
+div.dt-container div.dt-info {
+  font-size: 14px;
+}
+
+table.dataTable th.dt-type-numeric,
+table.dataTable th.dt-type-date,
+table.dataTable td.dt-type-numeric,
+table.dataTable td.dt-type-date {
+  text-align: left !important;
+}
+
+div.dt-container div.dt-length select {
+  width: 60px !important;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+div.dt-container div.dt-info {
+  font-size: 14px;
+}
+
+.dt-paging.paging_full_numbers {
+  margin-top: 15px !important;
+}
+
+/** Remove this CSS after implemented Mattable **/
+
+table.mat_tables_header
+  thead.MuiTableHead-root
+  tr.MuiTableRow-root
+  th.MuiTableCell-root.MuiTableCell-head {
+  font-family: "Lato", sans-serif !important;
+  padding: 12px 12px;
+}
+
+table.mat_tables_header
+  tbody.MuiTableBody-root
+  tr.MuiTableRow-root
+  td.MuiTableCell-root.MuiTableCell-body {
+  font-family: "Lato", sans-serif !important;
+}
+
+.showing_text_control {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 767px) {
+  .showing_text_control {
+    margin-bottom: 10px;
+  }
+}
+
+.table_tops {
+  margin-top: 15px;
+}
+
+.mat_tables_header .MuiTableHead-root {
+  background-color: var(--bs-qc-bg) !important;
+}
+
+.mat_tables_header .MuiTableHead-root span.MuiButtonBase-root {
+  color: var(--bs-text);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.mat_tables_header .MuiTableBody-root {
+  background-color: var(--bs-white);
+}
+
+.mat_tables_header
+  .MuiTableBody-root
+  .MuiTableRow-root.MuiTableRow-hover:hover {
+  background-color: var(--bs-white) !important;
+}
+
+.mat_tables_header .MuiTableBody-root .MuiTableRow-root .MuiTableCell-root {
+  font-size: 14px;
+  color: var(--bs-text);
+  vertical-align: middle;
+  text-align: left;
+  padding: 12px 12px;
+}
+
+.desktop_table_qc_checklist.desks {
+  margin-top: 15px;
+}
+
+nav.mat_table_pagination
+  ul.MuiPagination-ul
+  li
+  .MuiButtonBase-root.MuiPaginationItem-root.Mui-selected {
+  background-color: var(--bs-btn-blue) !important;
+  color: var(--bs-white) !important;
+  border-radius: 4px;
+}
+
+nav.mat_table_pagination
+  ul.MuiPagination-ul
+  li
+  .MuiButtonBase-root.MuiPaginationItem-root {
+  border-radius: 4px;
+}
+
+nav.mat_table_pagination
+  ul.MuiPagination-ul
+  li
+  .MuiButtonBase-root.MuiPaginationItem-root:hover {
+  background-color: var(--bs-btn-blue) !important;
+  color: var(--bs-white) !important;
+  border-radius: 4px;
+}
+
+.right_pagination_align {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hide_mat_tab_pagination {
+  display: none;
+}
+
+.mat_top_page {
+  margin-top: 15px !important;
+}
+
+button.views_details {
+  color: var(--bs-base-blue);
+  text-decoration: underline;
+  background-color: transparent;
+  border: none;
+  padding: none;
+  text-align: left;
+}
+
+.btn.btn-add {
+  background-color: var(--bs-btn-blue);
+  border: 1px solid var(--bs-btn-blue);
+  padding: 10px 15px 12px 15px;
+  border-radius: 6px;
+  color: var(--bs-white);
+}
+
+.btn.btn-add:hover {
+  background-color: var(--bs-btn-blue) !important;
+  border: 1px solid var(--bs-btn-blue) !important;
+  color: var(--bs-white) !important;
+}
+
+.btn.btn-add:focus {
+  background-color: var(--bs-btn-blue) !important;
+  border: 1px solid var(--bs-btn-blue) !important;
+  color: var(--bs-white);
+}
+
+.btn.btn-add svg {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 5px;
+}
+
+.btn.btn-add:active {
+  background-color: var(--bs-btn-blue) !important;
+  border: 1px solid var(--bs-btn-blue) !important;
+  color: var(--bs-white) !important;
+}
+
+.floating_save_btn {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 9;
+}
+
+.small_badge {
+  width: 120px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 10px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+}
+
+.new_small_badge {
+  width: 150px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 10px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+}
+
+.btn.btn-add:disabled {
+  color: var(--bs-white) !important;
+  background-color: var(--bs-disable-mail) !important;
+  border: 1px solid var(--bs-disable-mail) !important;
+}
+
+.remain_width {
+  width: calc(100% - 95px);
+}
+
+.form-select.entry_width:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.required {
+  color: var(--bs-error-red);
+}
+
+.errors {
+  color: var(--bs-error-red);
+  font-size: 14px;
+  margin-top: -9px;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: var(--bs-error-red);
+  font-size: 14px;
+  margin-top: 7px;
+}
+
+.form-control.emp_select {
+  height: 48px;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 8px;
+  background-color: var(--bs-mat-input-bg);
+  border: 1px solid var(--bs-mat-border);
+  margin-bottom: 15px;
+}
+
+.form-control.emp_select:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.add_emp_label {
+  color: var(--bs-radio-label);
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+textarea.form-control.emp_select:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+textarea.form-control.emp_select:active {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.not_found_img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.not_found_img img {
+  width: 100%;
+}
+
+.data_not_found_table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  height: 300px;
+  flex-direction: column;
+}
+
+.not_found_text {
+  margin-left: 15px;
+  font-size: 14px;
+  color: var(--bs-text);
+}
+
+#layouts_menu.lay_overlay {
+  background-color: rgb(145 145 145 / 39%);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+}
+
+.user_detail_label_answers {
+  margin-bottom: 15px;
+}
+
+.entry_select_box {
+  display: flex;
+  align-items: center;
+}
+
+.entry_width {
+  width: 80px !important;
+  margin-right: 15px;
+}
+
+.form-select.emp_select {
+  border: 1px solid var(--bs-mat-border);
+  background-color: var(--bs-mat-input-bg);
+  margin-bottom: 15px;
+  height: 48px;
+  font-size: 14px;
+}
+
+.form-select.emp_select:focus {
+  box-shadow: none !important;
+  border: 1px solid var(--bs-mat-border);
+}
+/* .sidebar_open
+  .main_sidemenu
+  .list_main_menu
+  .main_main_ul_list
+  .inner_page_list
+  /* .menus  */
+ {
+  /* background-color: red; */
+}
+#menuItem {
+  /* background-color: red; */
+  padding-left: 20px;
+}
+#employeePage{
+    width: 100px;
+    background: red;
+}
