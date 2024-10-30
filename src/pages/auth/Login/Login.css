@@ -1,0 +1,324 @@
+.login_bg {
+    width: 100%;
+    height: 100vh;
+    background: url("../../../assets/images/blue-sky-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.login_image_control {
+    width: 80%;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+.left_main_container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right_main_container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 60px 20px 80px;
+    justify-content: center;
+    background-color: var(--bs-white);
+    border-radius: 20px 0px 0px 20px;
+}
+
+.right_main_logo img {
+    width: 30%;
+}
+
+.welcome_text {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.sign_text {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.forgot_password {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot_password a {
+    text-decoration: none;
+    color: var(--bs-pass-clr);
+}
+
+.did-floating-label-content.mb_small {
+    margin-bottom: 5px;
+}
+
+.btn.btn-primary {
+    background-color: var(--bs-btn-modal);
+    border: 1px solid var(--bs-btn-modal);
+    border-radius: 5px;
+    padding: 10px 0px;
+    margin-bottom: 8px;
+}
+
+.no_account {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: var(--bs-account);
+    font-size: 16px;
+    text-align: center;
+}
+
+.signup_link a {
+    padding-left: 4px;
+    text-decoration: none;
+    color: var(--bs-btn-modal);
+    font-weight: 600;
+}
+
+/** Floating Label Css **/
+
+.did-floating-label-content {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.did-floating-label {
+    color: var(--bs-account);
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    top: 14px;
+    padding: 0 5px;
+    background: var(--bs-white);
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.did-floating-input,
+.did-floating-select {
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    background: var(--bs-white);
+    color: var(--bs-account);
+    border: 1px solid var(--bs-float-border);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+.did-floating-input:focus,
+.did-floating-select:focus {
+    outline: none;
+}
+
+.did-floating-input:focus~.did-floating-label,
+.did-floating-select:focus~.did-floating-label {
+    top: -8px;
+    font-size: 14px;
+    color: var(--bs-account);
+}
+
+.did-floating-input:focus,
+.did-floating-select:focus {
+    border: 1px solid var(--bs-float-select-bdr);
+}
+
+select.did-floating-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select.did-floating-select::-ms-expand {
+    display: none;
+}
+
+.did-floating-input:not(:placeholder-shown)~.did-floating-label {
+    top: -8px;
+    font-size: 13px;
+}
+
+.did-floating-select:not([value=""]):valid~.did-floating-label {
+    top: -8px;
+    font-size: 13px;
+}
+
+.did-floating-select[value=""]:focus~.did-floating-label {
+    top: 11px;
+    font-size: 13px;
+}
+
+.did-floating-select:not([multiple]):not([size]) {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='6' viewBox='0 0 8 6'%3E%3Cpath id='Path_1' data-name='Path 1' d='M371,294l4,6,4-6Z' transform='translate(-371 -294)' fill='%23003d71'/%3E%3C/svg%3E%0A");
+    background-position: right 15px top 50%;
+    background-repeat: no-repeat;
+}
+
+.did-error-input .did-floating-input,
+.did-error-input .did-floating-select {
+    border: 2px solid var(--bs-float-error);
+    color: var(--bs-float-error);
+}
+
+.did-error-input .did-floating-label {
+    font-weight: 600;
+    color: var(--bs-float-error);
+}
+
+.did-error-input .did-floating-select:not([multiple]):not([size]) {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='6' viewBox='0 0 8 6'%3E%3Cpath id='Path_1' data-name='Path 1' d='M371,294l4,6,4-6Z' transform='translate(-371 -294)' fill='%239d3b3b'/%3E%3C/svg%3E%0A");
+}
+
+input:-webkit-autofill {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 0 0 50px white inset;
+}
+
+.input-group {
+    display: flex;
+}
+
+.input-group .did-floating-input {
+    border-radius: 0 4px 4px 0;
+    border-left: 0;
+    padding-left: 0;
+}
+
+.input-group-append {
+    display: flex;
+    align-items: center;
+}
+
+/** Floating Label Css **/
+@media only screen and (max-width: 1023px) {
+    .hide_for_mobile {
+        display: none;
+    }
+
+    .welcome_text {
+        font-size: 28px;
+        margin-top: 5px;
+    }
+
+    .sign_text {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .no_account {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .right_main_logo {
+        text-align: center;
+    }
+
+    .welcome_text {
+        text-align: center;
+    }
+
+    .sign_text {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .col-lg-8.col-md-10.col-sm-12.custom_feild_sizes {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 1279px) and (min-width: 1024px) {
+    .col-lg-8.col-md-10.col-sm-12.custom_feild_sizes {
+        width: 100%;
+    }
+
+    .welcome_text {
+        font-size: 28px;
+        margin-top: 5px;
+    }
+
+    .sign_text {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .no_account {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .right_main_container {
+        padding: 20px 60px 20px 60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .right_main_container {
+        padding: 20px 50px 20px 50px;
+        overflow-y: auto;
+    }
+
+    .right_main_logo img {
+        width: 40%;
+    }
+
+    .welcome_text {
+        font-size: 28px;
+        margin-top: 5px;
+    }
+
+    .sign_text {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .no_account {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+}
+
+.eye_slash svg {
+    fill: var(--bs-account);
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.eye svg {
+    fill: var(--bs-account);
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.eye_slash {
+    position: absolute;
+    right: 15px;
+    top: 11px;
+    cursor: pointer;
+}
+

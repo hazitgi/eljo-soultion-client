@@ -1,0 +1,88 @@
+/* Page Container Styles */
+.page_container {
+    padding: 1.5rem;
+}
+
+.page_title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+/* Table Styles */
+.desktop_table {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.custom_datatable {
+    margin-bottom: 0;
+}
+
+.custom_datatable thead th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    color: #495057;
+    font-weight: 600;
+    padding: 12px;
+}
+
+.custom_datatable tbody td {
+    padding: 12px;
+    vertical-align: middle;
+}
+
+/* Mobile Responsive Classes */
+.tab_mobile_120 {
+    min-width: 120px;
+}
+
+.tab_mobile_150 {
+    min-width: 150px;
+}
+
+.tab_mobile_200 {
+    min-width: 200px;
+}
+
+/* Status Badge Styles */
+.small_badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+}
+
+.small_badge.active {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.small_badge.inactive {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+/* Table Responsive Wrapper */
+.main_datatable {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Button Styles */
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+}
+
+/* Hover Effects */
+.custom_datatable tbody tr:hover {
+    background-color: #f8f9fa;
+}
+.btn-primary {
+    margin-bottom: 1rem;
+}
